@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas de Compra y Tareas de Casa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gestión del Hogar</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Lista de Compra</h2>
+            <form onsubmit="agregarProducto(); return false;">
+                <input type="text" id="producto" placeholder="Producto">
+                <input type="text" id="cantidad" placeholder="Cantidad">
+                <button type="submit">Agregar</button>
+            </form>
+            <ul id="lista-de-compra"></ul>
+        </section>
+        <section>
+            <h2>Tareas de Casa</h2>
+            <form onsubmit="agregarTarea(); return false;">
+                <select id="tarea">
+                    <option value="Limpiar cocina">Limpiar la cocina</option>
+                    <option value="Limpiar baño">Limpiar el baño</option>
+                </select>
+                <input type="date" id="fecha">
+                <select id="responsable">
+                    <option value="Abel Martos Roncel">Abel Martos Roncel</option>
+                    <option value="Carla Manso Rojas">Carla Manso Rojas</option>
+                </select>
+                <button type="submit">Agregar</button>
+            </form>
+            <ul id="lista-de-tareas"></ul>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>

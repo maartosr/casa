@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #B9B9B9;
+    color: #000; /* Cambiado a negro */
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #000; /* Cambiado a negro */
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+#lista-form, #tarea-form {
+    margin-bottom: 1rem;
+}
+
+input[type="text"], input[type="number"], input[type="date"], select {
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+button {
+    padding: 0.5rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #fff;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li button {
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    margin-left: 1rem;
+}
+
+li button:hover {
+    background-color: darkred;
+}
+
+/* Añadir después de las reglas existentes */
+
+li.completada {
+    background-color: lightgreen;
+}
+
+button.completar {
+    background-color: green;
+    color: white;
+}
+
+button.completar:hover {
+    background-color: darkgreen;
+}
+
+button.eliminar {
+    background-color: red;
+    color: white;
+}
+
+button.eliminar:hover {
+    background-color: darkred;
+}
+
+
